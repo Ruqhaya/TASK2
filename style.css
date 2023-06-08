@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Lobster&family=Playfair+Display:wght@500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color:#5f87fe;
+    width: 100vw;
+    height: 100vh;
+
+}
+/* heading */
+h1{
+    color: transparent;
+    width: fit-content;
+    position: relative;
+    font-size: 4rem;
+    animation: box2 .5s ease forwards;
+    animation-delay: 1.5s;
+    margin: 0 auto;
+    margin-top: 7rem;
+    text-align: center;
+}
+h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: black;
+    animation: box 1s linear;
+    animation-delay: 1s;
+}
+@keyframes box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+    
+}
+@keyframes box2 {
+   100%
+   {
+    color: black;
+   } 
+}
+/* end of heading */
+.whole{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+    margin: 0 1rem 0 1rem;
+    margin-top: 4rem;
+}
+.whole h1{
+    margin-top: 0%;
+}
+.whole p{
+    font-size: 1.5rem;
+    margin: 1rem;
+    letter-spacing: .1rem;
+    font-family: 'Playfair Display', serif;
+}
+.whole img{
+    width:70%;
+    height: 49%;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+.body
+{
+    background-color: #8696FE;
+    width: 70%;
+    margin: 0 2rem 0 2rem;
+    margin-top: 0;
+    margin-bottom: 2ren;
+    height: 22.9rem;
+}
+.body:hover{
+    background-image: linear-gradient(to right top, #0079ff, #4380ff, #5f87fe, #748efe, #8696fe);
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    width: 100% 0%;
+    align-items: center;
+    padding: .2rem;
+    height: 85%;
+    width: 27%;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    background-color: cornflowerblue;
+    border: 0.1rem solid black;
+}
+.part:hover{
+    height: 86%;
+    transition: 1s;
+    background-color: #4a65df;
+    width: 27.3%;
+}
+a{
+    text-decoration: none;
+    margin: .2rem;
+}
+button{
+    width: 50%;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    background-color:#748efe;
+}
+button:hover{
+    color: white;
+    background-color:#4a65df;
+}
